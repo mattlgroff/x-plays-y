@@ -1,0 +1,24 @@
+{
+  "name": "x-plays-y",
+  "version": "1.0.0",
+  "description": "The idea is a cross-platform version of \"Twitch Plays Pokemon\", but for any game.",
+  "main": "app.js",
+  "dependencies": {
+    "robotjs": "^0.4.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",	  
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattlgroff/x-plays-y.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattlgroff/x-plays-y/issues"
+  },
+  "homepage": "https://github.com/mattlgroff/x-plays-y#readme"
+}
