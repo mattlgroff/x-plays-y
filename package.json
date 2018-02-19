@@ -4,11 +4,13 @@
   "description": "The idea is a cross-platform version of \"Twitch Plays Pokemon\", but for any game.",
   "main": "app.js",
   "dependencies": {
-    "robotjs": "^0.4.7"
+    "dotenv": "^5.0.0",
+    "robotjs": "^0.4.7",
+    "telegraf": "^3.18.0"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node app.js",	  
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

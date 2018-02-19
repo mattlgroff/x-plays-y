@@ -9,3 +9,6 @@ Read installation and compatibility of [robotjs](https://github.com/octalmage/ro
 git clone
 npm install
 ```
+
+## Demo Bot
+[X Plays Pokemon](t.me/XPlaysPokemonBot)
