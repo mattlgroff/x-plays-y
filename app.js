@@ -1,5 +1,5 @@
-const robot = require('robotjs')
 require('dotenv').config()
+const ks = require('node-key-sender')
 const Telegraf  = require('telegraf')
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN)
 
@@ -14,62 +14,132 @@ bot.command('commands', (ctx) => ctx.reply('Valid Inputs: a, b, up, down, left, 
 
 // a = a
 bot.hears('a', (ctx) => {
-  ctx.reply('Sent the command: a')
-  robot.keyTap('a')
+  ks.sendKey('a')
+    .then(res => {
+      ctx.reply(`Sent the command: ${ctx.update.message.text}`)
+      console.log(ctx.update.message.from.username + ': ' + ctx.update.message.text)
+    })
+    .catch(err => {
+      console.error(err)
+      ctx.reply(`Something went wrong sending ${ctx.update.message.text}`)
+    })
 })
 
 // b = b
 bot.hears('b', (ctx) => {
-  ctx.reply('Sent the command: b')
-  robot.keyTap('b')
+  ks.sendKey('b')
+    .then(res => {
+      ctx.reply(`Sent the command: ${ctx.update.message.text}`)
+      console.log(ctx.update.message.from.username + ': ' + ctx.update.message.text)
+    })
+    .catch(err => {
+      console.error(err)
+      ctx.reply(`Something went wrong sending ${ctx.update.message.text}`)
+    })
 })
 
 // up = up
 bot.hears('up', (ctx) => {
-  ctx.reply('Sent the command: up')
-  robot.keyTap('up')
+  ks.sendKey('up')
+    .then(res => {
+      ctx.reply(`Sent the command: ${ctx.update.message.text}`)
+      console.log(ctx.update.message.from.username + ': ' + ctx.update.message.text)
+    })
+    .catch(err => {
+      console.error(err)
+      ctx.reply(`Something went wrong sending ${ctx.update.message.text}`)
+    })
 })
 
 // down = down
 bot.hears('down', (ctx) => {
-  ctx.reply('Sent the command: down')
-  robot.keyTap('down')
+  ks.sendKey('down')
+    .then(res => {
+      ctx.reply(`Sent the command: ${ctx.update.message.text}`)
+      console.log(ctx.update.message.from.username + ': ' + ctx.update.message.text)
+    })
+    .catch(err => {
+      console.error(err)
+      ctx.reply(`Something went wrong sending ${ctx.update.message.text}`)
+    })
 })
 
 // left = left
 bot.hears('left', (ctx) => {
-  ctx.reply('Sent the command: left')
-  robot.keyTap('left')
+  ks.sendKey('left')
+    .then(res => {
+      ctx.reply(`Sent the command: ${ctx.update.message.text}`)
+      console.log(ctx.update.message.from.username + ': ' + ctx.update.message.text)
+    })
+    .catch(err => {
+      console.error(err)
+      ctx.reply(`Something went wrong sending ${ctx.update.message.text}`)
+    })
 })
 
 // right = right
 bot.hears('right', (ctx) => {
-  ctx.reply('Sent the command: right')
-  robot.keyTap('right')
+  ks.sendKey('right')
+    .then(res => {
+      ctx.reply(`Sent the command: ${ctx.update.message.text}`)
+      console.log(ctx.update.message.from.username + ': ' + ctx.update.message.text)
+    })
+    .catch(err => {
+      console.error(err)
+      ctx.reply(`Something went wrong sending ${ctx.update.message.text}`)
+    })
 })
 
 // start = c
 bot.hears('start', (ctx) => {
-  ctx.reply('Sent the command: start')
-  robot.keyTap('c')
+  ks.sendKey('c')
+    .then(res => {
+      ctx.reply(`Sent the command: ${ctx.update.message.text}`)
+      console.log(ctx.update.message.from.username + ': ' + ctx.update.message.text)
+    })
+    .catch(err => {
+      console.error(err)
+      ctx.reply(`Something went wrong sending ${ctx.update.message.text}`)
+    })
 })
 
 // select = d
 bot.hears('select', (ctx) => {
-  ctx.reply('Sent the command: select')
-  robot.keyTap('d')
+  ks.sendKey('d')
+    .then(res => {
+      ctx.reply(`Sent the command: ${ctx.update.message.text}`)
+      console.log(ctx.update.message.from.username + ': ' + ctx.update.message.text)
+    })
+    .catch(err => {
+      console.error(err)
+      ctx.reply(`Something went wrong sending ${ctx.update.message.text}`)
+    })
 })
 
 // l = l
 bot.hears('l', (ctx) => {
-  ctx.reply('Sent the command: L')
-  robot.keyTap('l')
+  ks.sendKey('l')
+    .then(res => {
+      ctx.reply(`Sent the command: ${ctx.update.message.text}`)
+      console.log(ctx.update.message.from.username + ': ' + ctx.update.message.text)
+    })
+    .catch(err => {
+      console.error(err)
+      ctx.reply(`Something went wrong sending ${ctx.update.message.text}`)
+    })
 })
 
 // r = r
 bot.hears('r', (ctx) => {
-  ctx.reply('Sent the command: R')
-  robot.keyTap('r')
+  ks.sendKey('r')
+    .then(res => {
+      ctx.reply(`Sent the command: ${ctx.update.message.text}`)
+      console.log(ctx.update.message.from.username + ': ' + ctx.update.message.text)
+    })
+    .catch(err => {
+      console.error(err)
+      ctx.reply(`Something went wrong sending ${ctx.update.message.text}`)
+    })
 })
 
 // Start Bot
